@@ -79,11 +79,19 @@ principle.
 > GraphQL is unappologetically driven by the requirements of views
 
 Note: We're not referring to the data we get back, but the query itself. We
-define what we get back when we ask for the household members section.
+define what we get back when we ask for the household members section. We
+let these needs drive the design of our GraphQL schema.
 
 ----
 
-### Strongly Types
+### Strongly Typed
+
+> ...and the server can make certain guarantees about the shape and nature of
+the response
+
+Note: When we ask for a to-do list, we know we are getting back a to-do list,
+no "if"s, "and"s or "but"s about it. We know what properties our to-do list
+will have, and what the properties of those properties are (if any).
 
 ----
 
@@ -97,6 +105,17 @@ feature availability query, for example. We start off asking if medicare is
 enabled, but now we want the AEP dates and the FFM sync. Will these extensions
 affect our existing queries? No. We still only get back the bits of information
 we asked for without the new content.
+
+----
+
+### Introspective
+
+> [Introspection] serves as a powerful platform for building commons tools and
+client software libraries
+
+Note: When we create a service we (or the platform) generates a manifest file.
+With introspection, developers have a way to ask QraphQL directly what the
+schema looks like and develop independently.
 
 ---
 
