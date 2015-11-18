@@ -1,0 +1,17 @@
+{
+  "1": {
+    "items": [{
+      "id": "1",
+      "name": "Stuff",
+      "isComplete": false
+    }, {
+      "id": "2",
+      "name": "More Stuff",
+      "isComplete": false
+    }, {
+      "id": "3",
+      "name": "Even More Stuff",
+      "isComplete": true
+    }]
+  }
+}
